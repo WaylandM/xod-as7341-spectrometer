@@ -1,34 +1,45 @@
 {
-  "description": "Set the current limit for the LED.",
+  "description": "Get the most recent measurement from the near infrared (NIR) channel.",
   "nodes": [
     {
-      "id": "Bkh9Zf0Qi",
+      "id": "BkoVmgCmi",
       "position": {
         "units": "slots",
-        "x": 0,
-        "y": 1
+        "x": -8,
+        "y": 0
       },
       "type": "xod/patch-nodes/not-implemented-in-xod"
     },
     {
       "description": "An as7341-device.",
-      "id": "S1gn9bzRXi",
+      "id": "rkxoVQl0Qs",
       "label": "DEV",
       "position": {
         "units": "slots",
-        "x": 0,
-        "y": 0
+        "x": -8,
+        "y": -1
       },
       "type": "@/input-as7341-device"
     },
     {
-      "description": "Pulses if LED current limit is set successfully.",
-      "id": "Hy-h9ZzRXi",
+      "description": "Raw measurement from the near infrared (NIR) channel.",
+      "id": "B1-oV7eRXs",
+      "label": "VALUE",
+      "position": {
+        "units": "slots",
+        "x": -8,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "description": "Pulse on read.",
+      "id": "H1fjNmlA7o",
       "label": "DONE",
       "position": {
         "units": "slots",
-        "x": 0,
-        "y": 2
+        "x": -7,
+        "y": 1
       },
       "type": "xod/patch-nodes/output-pulse"
     },
@@ -37,28 +48,14 @@
         "__out__": "Continuously"
       },
       "description": "Update.",
-      "id": "rJfhcZGRms",
+      "id": "BkmiE7gAQs",
       "label": "UPD",
       "position": {
         "units": "slots",
-        "x": 2,
-        "y": 0
+        "x": -7,
+        "y": -1
       },
       "type": "xod/patch-nodes/input-pulse"
-    },
-    {
-      "boundLiterals": {
-        "__out__": "100"
-      },
-      "description": "LED current limit in mA. Range is 4mA to 258mA.",
-      "id": "ryXnqWGRmj",
-      "label": "mA",
-      "position": {
-        "units": "slots",
-        "x": 1,
-        "y": 0
-      },
-      "type": "xod/patch-nodes/input-number"
     }
   ]
 }

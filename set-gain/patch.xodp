@@ -1,2 +1,64 @@
 {
+  "description": "Set the ADC gain multiplier.",
+  "nodes": [
+    {
+      "id": "r1-pKWRQs",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "An as7341-device.",
+      "id": "BkeZaFZ0Qs",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "@/input-as7341-device"
+    },
+    {
+      "description": "Pulses if gain is successfully set.",
+      "id": "B1WZpYb0Qs",
+      "label": "DONE",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "Continuously"
+      },
+      "description": "Update.",
+      "id": "ByM-atbAXj",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "256"
+      },
+      "description": "ADC gain multiplier. Can take values of: 0.5, 1, 2, 4, 8, 16, 32, 64, 128, 256 and 512.",
+      "id": "HynToWA7j",
+      "label": "GAIN",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    }
+  ]
 }

@@ -1,2 +1,50 @@
 {
+  "description": "Read all channels and store measurements in an internal buffer. To retrieve a measurement for a specific channel, use the appropriate get-ch-* node.",
+  "nodes": [
+    {
+      "id": "BJgz0vamj",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "An as7341-device.",
+      "id": "HyIz0w6Qo",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "@/input-as7341-device"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "Continuously"
+      },
+      "description": "Update. Pulse triggers read.",
+      "id": "rJ6zAwp7j",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "description": "Pulse on successful read.",
+      "id": "HJMw0waQi",
+      "label": "DONE",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    }
+  ]
 }
