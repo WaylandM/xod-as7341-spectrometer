@@ -1,6 +1,6 @@
 {
-  "description": "Adafruit AS7341 11-Channel Spectral Sensor. Wraps https://github.com/adafruit/Adafruit_AS7341.",
+  "description": "Adafruit AS7341 10-Channel Spectral Sensor. Wraps https://github.com/adafruit/Adafruit_AS7341.",
   "license": "BSD",
   "name": "as7341-spectrometer",
-  "version": "0.0.2"
+  "version": "0.0.3"
 }
