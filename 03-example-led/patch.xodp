@@ -1,0 +1,163 @@
+{
+  "description": "LED control example.",
+  "links": [
+    {
+      "id": "H1zVXhf07j",
+      "input": {
+        "nodeId": "BklV72GCms",
+        "pinKey": "BJk95MGF5"
+      },
+      "output": {
+        "nodeId": "BJVmhGRmj",
+        "pinKey": "rJiHKfzYq"
+      }
+    },
+    {
+      "id": "B1XEQ3fAXo",
+      "input": {
+        "nodeId": "BybVX3zAms",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "BJVmhGRmj",
+        "pinKey": "rJiHKfzYq"
+      }
+    },
+    {
+      "id": "rkWr3GAms",
+      "input": {
+        "nodeId": "Sy0Q2G07i",
+        "pinKey": "S1gn9bzRXi"
+      },
+      "output": {
+        "nodeId": "Hk84nfRQj",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "B16B3fR7o",
+      "input": {
+        "nodeId": "rJ5rnGAmo",
+        "pinKey": "BklHHVfAms"
+      },
+      "output": {
+        "nodeId": "Sk9EnG0ms",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "rydLnM07i",
+      "input": {
+        "nodeId": "rJ5rnGAmo",
+        "pinKey": "ByL8NMRXs"
+      },
+      "output": {
+        "nodeId": "B1VLhfCmo",
+        "pinKey": "Sk1e_NIVE"
+      }
+    },
+    {
+      "id": "H15vhGA7o",
+      "input": {
+        "nodeId": "Sy0Q2G07i",
+        "pinKey": "ryXnqWGRmj"
+      },
+      "output": {
+        "nodeId": "HkUDnzR7j",
+        "pinKey": "ByfGSDjQE"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "BJVmhGRmj",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "@/as7341-device"
+    },
+    {
+      "id": "BklV72GCms",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 1
+      },
+      "type": "@/init"
+    },
+    {
+      "id": "BybVX3zAms",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/to-bus"
+    },
+    {
+      "id": "Sy0Q2G07i",
+      "position": {
+        "units": "slots",
+        "x": 9,
+        "y": 1
+      },
+      "type": "@/set-led-current"
+    },
+    {
+      "id": "Hk84nfRQj",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 9,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "id": "Sk9EnG0ms",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "id": "rJ5rnGAmo",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 1
+      },
+      "type": "@/enable-led"
+    },
+    {
+      "boundLiterals": {
+        "Sk1e_NIVE": "False"
+      },
+      "id": "B1VLhfCmo",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 0
+      },
+      "type": "xod/debug/tweak-boolean"
+    },
+    {
+      "boundLiterals": {
+        "ByfGSDjQE": "100"
+      },
+      "id": "HkUDnzR7j",
+      "position": {
+        "units": "slots",
+        "x": 10,
+        "y": 0
+      },
+      "type": "xod/debug/tweak-number"
+    }
+  ]
+}

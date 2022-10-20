@@ -1,2 +1,230 @@
 {
+  "description": "Flicker detection example. Run in debugger.",
+  "links": [
+    {
+      "id": "H1_FWsz07j",
+      "input": {
+        "nodeId": "S1xtZjzRmj",
+        "pinKey": "BJk95MGF5"
+      },
+      "output": {
+        "nodeId": "BJtWjMA7i",
+        "pinKey": "rJiHKfzYq"
+      }
+    },
+    {
+      "id": "rJtt-jG07i",
+      "input": {
+        "nodeId": "rkZYWsfRQi",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "BJtWjMA7i",
+        "pinKey": "rJiHKfzYq"
+      }
+    },
+    {
+      "id": "By5K-jfRmi",
+      "input": {
+        "nodeId": "rJMKbsfRXs",
+        "pinKey": "S1gUgHZ0Xi"
+      },
+      "output": {
+        "nodeId": "r1SKWjzAXj",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "SJjFWiGC7o",
+      "input": {
+        "nodeId": "B1XKZoMRQo",
+        "pinKey": "S1loPOZC7i"
+      },
+      "output": {
+        "nodeId": "r1UtWozAXi",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "Sy2K-iMAQo",
+      "input": {
+        "nodeId": "SyEt-sz07i",
+        "pinKey": "BkeZaFZ0Qs"
+      },
+      "output": {
+        "nodeId": "HyDKbsM0Xo",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "S16FbiMCms",
+      "input": {
+        "nodeId": "B1XKZoMRQo",
+        "pinKey": "SkGiv_WAQs"
+      },
+      "output": {
+        "nodeId": "S1xtZjzRmj",
+        "pinKey": "H1v6qMzK5"
+      }
+    },
+    {
+      "id": "rkCtWoMA7j",
+      "input": {
+        "nodeId": "rJMKbsfRXs",
+        "pinKey": "H1XUeH-CQj"
+      },
+      "output": {
+        "nodeId": "B1XKZoMRQo",
+        "pinKey": "H1-iPu-CQj"
+      }
+    },
+    {
+      "id": "SkyeKbozCmo",
+      "input": {
+        "nodeId": "SyEt-sz07i",
+        "pinKey": "ByM-atbAXj"
+      },
+      "output": {
+        "nodeId": "rJMKbsfRXs",
+        "pinKey": "SyzUxrbRQi"
+      }
+    },
+    {
+      "id": "S1DziMCXs",
+      "input": {
+        "nodeId": "r1gfjzRQs",
+        "pinKey": "HJl21IM0Xo"
+      },
+      "output": {
+        "nodeId": "HyQGofAQo",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "ry47ofC7o",
+      "input": {
+        "nodeId": "rygmoz07o",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "r1gfjzRQs",
+        "pinKey": "rJWhyIGCmo"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "BJtWjMA7i",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 0
+      },
+      "type": "@/as7341-device"
+    },
+    {
+      "id": "S1xtZjzRmj",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 1
+      },
+      "type": "@/init"
+    },
+    {
+      "id": "rkZYWsfRQi",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/to-bus"
+    },
+    {
+      "id": "rJMKbsfRXs",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 3
+      },
+      "type": "@/set-astep"
+    },
+    {
+      "id": "B1XKZoMRQo",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 3
+      },
+      "type": "@/set-atime"
+    },
+    {
+      "id": "SyEt-sz07i",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 3
+      },
+      "type": "@/set-gain"
+    },
+    {
+      "id": "r1SKWjzAXj",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "id": "r1UtWozAXi",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "id": "HyDKbsM0Xo",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "id": "r1gfjzRQs",
+      "position": {
+        "units": "slots",
+        "x": 10,
+        "y": 2
+      },
+      "type": "@/detect-flicker"
+    },
+    {
+      "id": "HyQGofAQo",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 10,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "id": "rygmoz07o",
+      "position": {
+        "units": "slots",
+        "x": 10,
+        "y": 3
+      },
+      "type": "xod/debug/watch"
+    }
+  ]
 }

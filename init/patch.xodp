@@ -1,4 +1,5 @@
 {
+  "description": "Initialize sensor.",
   "nodes": [
     {
       "id": "SJYO9GfYq",

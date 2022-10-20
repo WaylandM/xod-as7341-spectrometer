@@ -1,4 +1,5 @@
 {
+  "description": "Create an as7341-device.",
   "nodes": [
     {
       "id": "S1O7FfGF5",
@@ -10,6 +11,7 @@
       "type": "xod/patch-nodes/not-implemented-in-xod"
     },
     {
+      "description": "An as7341 device.",
       "id": "rJiHKfzYq",
       "label": "DEV",
       "position": {
